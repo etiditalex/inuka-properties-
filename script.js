@@ -258,12 +258,32 @@ function animateCounter(element, target) {
     }, stepTime);
 }
 
+// Header Scroll Effect
+function initHeaderScroll() {
+    const header = document.querySelector('.header');
+    if (header) {
+        let lastScroll = 0;
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    }
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     initMobileNav();
     initCounterAnimation();
     initMobileDropdowns();
     initVideoHandling();
+    initHeaderScroll();
 });
 
 // Property Search Form Handler
