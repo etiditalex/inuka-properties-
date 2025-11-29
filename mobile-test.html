@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsiveness Test - Inuka Properties</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .test-info {
+            background: #f8f9fa;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            border-left: 4px solid #2dabe1;
+        }
+        .test-info h3 {
+            color: #2dabe1;
+            margin-bottom: 1rem;
+        }
+        .test-info p {
+            margin-bottom: 0.5rem;
+        }
+        .test-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .test-link {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease;
+        }
+        .test-link:hover {
+            transform: translateY(-5px);
+            color: #2dabe1;
+        }
+        .test-link i {
+            font-size: 2rem;
+            color: #2dabe1;
+            margin-bottom: 1rem;
+        }
+        .test-link h4 {
+            margin-bottom: 0.5rem;
+        }
+        .test-link p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <div class="contact-info">
+                        <span class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+254711082084">+254 711 082 084</a>
+                        </span>
+                        <span class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@inukaproperties.co.ke">info@inukaproperties.co.ke</a>
+                        </span>
+                        <span class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nyali, Mombasa (Office)</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <div class="top-search">
+                        <form class="top-search-form" id="topSearchForm">
+                            <div class="search-input-group">
+                                <input type="text" id="topSearchInput" placeholder="Search properties, locations..." required>
+                                <button type="submit" class="search-btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="social-links-top">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Properties Logo">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="land-for-sale.html" class="nav-link">For Sale</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about/who-we-are.html">Who We Are</a></li>
+                            <li><a href="about/why-us.html">Why Us</a></li>
+                            <li><a href="about/our-team.html">Our Team</a></li>
+                            <li><a href="about/csr.html">CSR</a></li>
+                            <li><a href="about/our-partners.html">Our Partners</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link active">IAPL INSIDER <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="insider/blogs.html">Blogs</a></li>
+                            <li><a href="insider/news.html">News</a></li>
+                            <li><a href="insider/market-research.html">Market Research</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Testimonials <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="testimonials/client-testimonials.html">Client Testimonials</a></li>
+                            <li><a href="testimonials/downloads.html">Downloads</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="book-visit.html" class="book-visit-btn">Book a Site Visit</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Test Content -->
+    <section class="article-content" style="margin-top: 120px;">
+        <div class="container">
+            <div class="test-info">
+                <h3><i class="fas fa-mobile-alt"></i> Mobile Responsiveness Test</h3>
+                <p><strong>Test Instructions:</strong></p>
+                <p>1. Open this page on different devices (phone, tablet, desktop)</p>
+                <p>2. Test the navigation menu and top bar responsiveness</p>
+                <p>3. Check that all text is readable and buttons are touch-friendly</p>
+                <p>4. Verify that images scale properly</p>
+                <p>5. Test the vendor cards and article content layout</p>
+            </div>
+
+            <div class="test-links">
+                <a href="bofa-platinum-estate-handover-ceremony-september-2025.html" class="test-link">
+                    <i class="fas fa-newspaper"></i>
+                    <h4>Bofa Platinum Handover</h4>
+                    <p>Test the news article page with vendor cards</p>
+                </a>
+                
+                <a href="insider/blogs.html" class="test-link">
+                    <i class="fas fa-blog"></i>
+                    <h4>Blogs Page</h4>
+                    <p>Test the blogs listing page layout</p>
+                </a>
+                
+                <a href="insider/news.html" class="test-link">
+                    <i class="fas fa-newspaper"></i>
+                    <h4>News Page</h4>
+                    <p>Test the news articles listing page</p>
+                </a>
+                
+                <a href="insider/market-research.html" class="test-link">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Market Research</h4>
+                    <p>Test the market research page layout</p>
+                </a>
+                
+                <a href="land-for-sale.html" class="test-link">
+                    <i class="fas fa-home"></i>
+                    <h4>Properties Page</h4>
+                    <p>Test the properties listing page</p>
+                </a>
+                
+                <a href="about/who-we-are.html" class="test-link">
+                    <i class="fas fa-users"></i>
+                    <h4>About Us Page</h4>
+                    <p>Test the about us page layout</p>
+                </a>
+            </div>
+
+            <!-- Sample Vendor Cards for Testing -->
+            <div class="vendors-showcase" style="margin: 3rem 0;">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: #2dabe1;">Sample Vendor Cards (Mobile Test)</h2>
+                
+                <div class="vendor-card">
+                    <div class="vendor-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1758104546/Aliero_fokyxu.jpg" alt="Aliero Builders" class="vendor-logo">
+                    </div>
+                    <div class="vendor-content">
+                        <h3>Aliero Builders</h3>
+                        <div class="vendor-category">
+                            <i class="fas fa-hammer"></i>
+                            <span>Construction & Building Services</span>
+                        </div>
+                        <p class="vendor-description">Some of the most fundamental aspects of Aliero Builders are personalized services, systematic planning, time efficiency, cost-saving construction methodology.</p>
+                        
+                        <div class="vendor-services">
+                            <h4>Key Services:</h4>
+                            <ul>
+                                <li>Personalized Construction Services</li>
+                                <li>Systematic Planning & Project Management</li>
+                                <li>Time-Efficient Construction Methods</li>
+                                <li>Cost-Saving Construction Methodology</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="vendor-cta">
+                            <a href="mailto:events@inukaproperties.co.ke?subject=Inquiry about Aliero Builders" class="btn">Contact Vendor</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vendor-card">
+                    <div class="vendor-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1758104530/Minevoice_vfzpoe.jpg" alt="Minevoice Design & Build" class="vendor-logo">
+                    </div>
+                    <div class="vendor-content">
+                        <h3>Minevoice Design & Build</h3>
+                        <div class="vendor-category">
+                            <i class="fas fa-drafting-compass"></i>
+                            <span>Design & Build Company</span>
+                        </div>
+                        <p class="vendor-description">DESIGN AND BUILD COMPANY WITH THAT ONE THING WHICH NO OTHER COMPANY HAS. OUR VOICE, MIND & VISION.</p>
+                        
+                        <div class="vendor-services">
+                            <h4>Key Services:</h4>
+                            <ul>
+                                <li>Comprehensive Design & Build Solutions</li>
+                                <li>Unique Voice, Mind & Vision Approach</li>
+                                <li>Custom Design Services</li>
+                                <li>Complete Construction Projects</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="vendor-cta">
+                            <a href="mailto:events@inukaproperties.co.ke?subject=Inquiry about Minevoice Design & Build" class="btn">Contact Vendor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Properties Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">Inuka Afrika Properties</span>
+                    </div>
+                    <p class="footer-description">Your trusted partner in real estate investment and development across Kenya's most promising locations.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="land-for-sale.html">Properties</a></li>
+                        <li><a href="about/who-we-are.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Properties</h3>
+                    <ul class="footer-links">
+                        <li><a href="properties/bofa-platinum-estate.html">Bofa Platinum Estate</a></li>
+                        <li><a href="properties/chumani-phase-3.html">Chumani Phase 3</a></li>
+                        <li><a href="properties/chumani-phase-6.html">Chumani Phase 6</a></li>
+                        <li><a href="land-for-sale.html">View All Properties</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +254 711 082 084</p>
+                        <p><i class="fas fa-envelope"></i> info@inukaproperties.co.ke</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Nyali, Mombasa (Office)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Inuka Afrika Properties. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

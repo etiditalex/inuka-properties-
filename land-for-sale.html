@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Sale - Inuka Properties | Premium Coastal, Highway & Strategic Development Properties</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <div class="contact-info">
+                        <span class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+254711082084">+254 711 082 084</a>
+                        </span>
+                        <span class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@inukaproperties.co.ke">info@inukaproperties.co.ke</a>
+                        </span>
+                        <span class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nyali, Mombasa</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <div class="top-search">
+                        <form class="top-search-form" id="topSearchForm">
+                            <div class="search-input-group">
+                                <input type="text" id="topSearchInput" placeholder="Search properties, locations..." required>
+                                <button type="submit" class="search-btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="social-links-top">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Properties Logo">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="land-for-sale.html" class="nav-link active">For Sale</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about/who-we-are.html">Who We Are</a></li>
+                            <li><a href="about/why-us.html">Why Us</a></li>
+                            <li><a href="about/our-team.html">Our Team</a></li>
+                            <li><a href="about/csr.html">CSR</a></li>
+                            <li><a href="about/our-partners.html">Our Partners</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">IAPL INSIDER <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="insider/blogs.html">Blogs</a></li>
+                            <li><a href="insider/news.html">News</a></li>
+                            <li><a href="insider/market-research.html">Market Research</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Testimonials <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="testimonials/client-testimonials.html">Client Testimonials</a></li>
+                            <li><a href="testimonials/downloads.html">Downloads</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="book-visit.html" class="nav-link book-visit-btn">Book a Site Visit</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>For Sale</h1>
+            <p>Discover premium investment opportunities in our curated selection of prime coastal, highway, and strategic development properties across Kilifi County</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="propertyType">Property Type:</label>
+                    <select id="propertyType" class="filter-select">
+                        <option value="">All Types</option>
+                        <option value="residential">Residential Properties</option>
+                        <option value="beach">Beach Properties</option>
+                        <option value="highway">Highway Properties</option>
+                        <option value="coastal">Coastal Properties</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="location">Location:</label>
+                    <select id="location" class="filter-select">
+                        <option value="">All Locations</option>
+                        <option value="bofa">Bofa</option>
+                        <option value="mida">Mida</option>
+                        <option value="msabaha">Msabaha</option>
+                        <option value="malindi">Malindi</option>
+                        <option value="mtondia">Mtondia</option>
+                        <option value="tezo">Tezo</option>
+                        <option value="chumani">Chumani</option>
+                        <option value="kikambala">Kikambala</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range:</label>
+                    <select id="price" class="filter-select">
+                        <option value="">All Prices</option>
+                        <option value="350000-600000">350K - 600K</option>
+                        <option value="600000-1000000">600K - 1M</option>
+                        <option value="1000000-2000000">1M - 2M</option>
+                        <option value="2000000-6000000">2M - 6M</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="size">Land Size:</label>
+                    <select id="size" class="filter-select">
+                        <option value="">All Sizes</option>
+                        <option value="1/8">1/8 Acre</option>
+                        <option value="1/4">1/4 Acre</option>
+                        <option value="1/2">1/2 Acre</option>
+                        <option value="1">1 Acre</option>
+                        <option value="2+">2+ Acres</option>
+                    </select>
+                </div>
+                <button class="filter-btn" onclick="applyFilters()">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Grid -->
+    <section class="properties-section">
+        <div class="container">
+            <div class="properties-grid">
+                <!-- Property 1 - Bofa Phase 20 -->
+                <div class="property-card featured-property" data-location="bofa" data-price="2150000" data-size="1/8" data-property-type="residential">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1757594195/Bofa_Phase_20_z9pato.jpg" alt="Bofa Phase 20">
+                        <div class="property-badge">New</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Bofa Phase 20</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Bofa, Kilifi County</p>
+                        <div class="property-features">
+                            <span class="feature"><i class="fas fa-road"></i> Tarmacked Road</span>
+                            <span class="feature"><i class="fas fa-home"></i> Residential Area</span>
+                            <span class="feature"><i class="fas fa-tint"></i> Utilities Available</span>
+                        </div>
+                        <div class="property-price">
+                            <span class="price">KES 2,150,000</span>
+                            <span class="size">1/8th Acre</span>
+                        </div>
+                        <div class="property-description">
+                            <p>Well-developed residential neighborhood along newly tarmacked Bofa Road (B69). Located in established community with electricity and water on site.</p>
+                        </div>
+                        <div class="property-payment">
+                            <span class="payment-info">Deposit: KES 700,000</span>
+                            <span class="payment-info">12 Monthly Installments</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="properties/bofa-phase-20.html" class="btn btn-primary">View Details</a>
+                            <a href="book-visit.html" class="btn btn-secondary">Book Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 - Bofa Phase 21 -->
+                <div class="property-card featured-property" data-location="bofa" data-price="1850000" data-size="1/8" data-property-type="residential">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1757593805/Bofa_Phase_21_jntops.jpg" alt="Bofa Phase 21">
+                        <div class="property-badge">New</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Bofa Phase 21</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Bofa, Kilifi County</p>
+                        <div class="property-features">
+                            <span class="feature"><i class="fas fa-road"></i> Tarmacked Road</span>
+                            <span class="feature"><i class="fas fa-tint"></i> Water & Electricity</span>
+                            <span class="feature"><i class="fas fa-shield-alt"></i> Perimeter Fence</span>
+                        </div>
+                        <div class="property-price">
+                            <span class="price">KES 1,850,000</span>
+                            <span class="size">1/8th Acre</span>
+                        </div>
+                        <div class="property-description">
+                            <p>Premium development with full infrastructure. Located off newly tarmacked Bofa Road (B69) with water, electricity, well demarcated plots, access roads, and perimeter fence.</p>
+                        </div>
+                        <div class="property-payment">
+                            <span class="payment-info">Deposit: KES 700,000</span>
+                            <span class="payment-info">12 Monthly Installments</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="properties/bofa-phase-21.html" class="btn btn-primary">View Details</a>
+                            <a href="book-visit.html" class="btn btn-secondary">Book Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 - Chumani Beach View -->
+                <div class="property-card featured-property" data-location="chumani" data-price="650000" data-size="1/8" data-property-type="residential">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1757593547/Chumani_Beach_View_3_y2kcxg.jpg" alt="Chumani Beach View">
+                        <div class="property-badge">New</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Chumani Beach View</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Chumani, Kilifi County</p>
+                        <div class="property-features">
+                            <span class="feature"><i class="fas fa-umbrella-beach"></i> 600m to Beach</span>
+                            <span class="feature"><i class="fas fa-road"></i> 2.5km to Highway</span>
+                            <span class="feature"><i class="fas fa-store"></i> 2km to Town</span>
+                        </div>
+                        <div class="property-price">
+                            <span class="price">KES 650,000</span>
+                            <span class="size">1/8th Acre</span>
+                        </div>
+                        <div class="property-description">
+                            <p>Prime coastal land with beach proximity. Just 600m to the beach, 2.5km from highway, and 2km to Chumani town. Perfect for coastal living and investment.</p>
+                        </div>
+                        <div class="property-payment">
+                            <span class="payment-info">Deposit: KES 200,000</span>
+                            <span class="payment-info">12 Monthly Installments</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="properties/chumani-beach-view.html" class="btn btn-primary">View Details</a>
+                            <a href="book-visit.html" class="btn btn-secondary">Book Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 4 - Bofa Platinum Estate -->
+                <div class="property-card featured-property" data-location="bofa" data-price="2990000" data-size="1/8" data-property-type="residential">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756098961/Bofa_Platinum_Estate_wqa3bm.jpg" alt="Bofa Platinum Estate">
+                        <div class="property-badge">Premium</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Bofa Platinum Estate</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Bofa, Kilifi County</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 1/8 Acre</span>
+                            <span><i class="fas fa-coins"></i> KES 2,990,000</span>
+                        </div>
+                        <p class="property-description">A Controlled Gated Community Development, touching Bofa Road and only 30 metres from the sandy Beach. Premium beachfront living with panoramic ocean views.</p>
+                        <div class="property-features">
+                            <span class="feature">Gated Community</span>
+                            <span class="feature">Beachfront</span>
+                            <span class="feature">Security</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="book-visit.html" class="btn btn-primary">Book Site Visit</a>
+                            <a href="properties/bofa-platinum-estate.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Property 4 - Bofa Phase 9 Extension -->
+                <div class="property-card featured-property" data-location="bofa" data-price="1599000" data-size="1/8" data-property-type="residential">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756098515/Bofa_Phase_9_Extension_jmanrk.jpg" alt="Bofa Phase 9 Extension">
+                        <div class="property-badge">Best Value</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Bofa Phase 9 Extension</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Bofa, Kilifi County</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 1/8 Acre</span>
+                            <span><i class="fas fa-coins"></i> KES 1,599,000</span>
+                        </div>
+                        <p class="property-description">BOFA 3RD ROW BEACH PLOTS – KES 1.599M ONLY! Just 5 minutes walk to the beach – ideal for your dream home or investment.</p>
+                        <div class="property-features">
+                            <span class="feature">5 Min to Beach</span>
+                            <span class="feature">Gated Community</span>
+                            <span class="feature">Flexible Terms</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="book-visit.html" class="btn btn-primary">Book Site Visit</a>
+                            <a href="properties/bofa-phase-9-extension.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 5 - Mida Park View Phase 2 -->
+                <div class="property-card featured-property" data-location="mida" data-price="350000" data-size="1/8" data-property-type="residential">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756100223/MIDA_PARK_VIEW_PHASE_2_hdyvle.jpg" alt="Mida Park View Phase 2">
+                        <div class="property-badge">Affordable</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Mida Park View Phase 2</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Mida, Kilifi County</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 1/8 Acre</span>
+                            <span><i class="fas fa-coins"></i> KES 350,000</span>
+                        </div>
+                        <p class="property-description">Located in Mida, just 800 meters from Kilifi-Malindi highway. Strategic location with perimeter security and 9m wide access road.</p>
+                        <div class="property-features">
+                            <span class="feature">Highway Access</span>
+                            <span class="feature">Perimeter Security</span>
+                            <span class="feature">Affordable</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="book-visit.html" class="btn btn-primary">Book Site Visit</a>
+                            <a href="properties/mida-park-view-phase-2.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 6 - Msabaha Phase 6 -->
+                <div class="property-card featured-property" data-location="malindi" data-price="450000" data-size="1/8" data-property-type="residential">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756099893/Msabaha_Phase_6_vkgdbs.jpg" alt="Msabaha Phase 6">
+                        <div class="property-badge">Strategic Location</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Msabaha Phase 6</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Malindi, Kizingo Area, Kilifi County</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 1/8 Acre</span>
+                            <span><i class="fas fa-coins"></i> KES 450,000</span>
+                        </div>
+                        <p class="property-description">Located in Malindi Kizingo area, one of the fastest growing areas in Kilifi County. Just 1.3km from Mombasa-Malindi highway.</p>
+                        <div class="property-features">
+                            <span class="feature">Highway Access</span>
+                            <span class="feature">Airport Proximity</span>
+                            <span class="feature">Fast-Growing Area</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="book-visit.html" class="btn btn-primary">Book Site Visit</a>
+                            <a href="properties/msabaha-phase-6.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 7 - Malindi Airport View Gardens -->
+                <div class="property-card featured-property" data-location="malindi" data-price="950000" data-size="1/8" data-property-type="residential">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756099338/Malindi_Airport_View_Gardens_zmspjp.jpg" alt="Malindi Airport View Gardens">
+                        <div class="property-badge">Prime Location</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Malindi Airport View Gardens</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Ganda Furunzi Area, Malindi, Kilifi County</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 1/8 Acre</span>
+                            <span><i class="fas fa-coins"></i> KES 950,000</span>
+                        </div>
+                        <p class="property-description">Located in Ganda Furunzi Area, just 3km from Malindi Airport. Minutes away from Malindi Ocean & Beach with excellent connectivity to Watamu.</p>
+                        <div class="property-features">
+                            <span class="feature">Airport Proximity</span>
+                            <span class="feature">Coastal Living</span>
+                            <span class="feature">High Growth Potential</span>
+                        </div>
+                        <div class="property-actions">
+                            <a href="book-visit.html" class="btn btn-primary">Book Site Visit</a>
+                            <a href="properties/malindi-airport-view-gardens.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 8 - Mtondia Highway Gardens -->
+                <div class="property-card featured-property" data-location="kilifi" data-price="1250000" data-size="1/8" data-property-type="residential">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756044032/Mtondia_Highway_Gardens_ohqnv3.jpg" alt="Mtondia Highway Gardens">
+                        <div class="property-badge">Highway Access</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Mtondia Highway Gardens</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Mtondia, Kilifi County</p>
+                        <p class="property-description">Residential/Commercial serviced plots touching Kilifi-Malindi Highway. Just 4.5km from Pwani University with water & electricity on site.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-road"></i> Highway Access</span>
+                            <span><i class="fas fa-university"></i> University Proximity</span>
+                            <span><i class="fas fa-tint"></i> Water on Site</span>
+                            <span><i class="fas fa-bolt"></i> Electricity on Site</span>
+                        </div>
+                        <div class="property-pricing">
+                            <div class="pricing-option">
+                                <span class="size">1/8 Acre</span>
+                                <span class="price">KES 1.25M</span>
+                            </div>
+                            <div class="pricing-option">
+                                <span class="size">1/4 Acre</span>
+                                <span class="price">KES 2.5M</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <a href="properties/mtondia-highway-gardens.html" class="btn btn-primary">View Details</a>
+                            <a href="book-visit.html" class="btn btn-secondary">Book Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 9 - Ocean View Gardens -->
+                <div class="property-card featured-property" data-location="kilifi" data-price="495000" data-size="1/8" data-property-type="beach">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756039651/Ocean_View_Gardens_sey25b.jpg" alt="Ocean View Gardens">
+                        <div class="property-badge">Beach Proximity</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Ocean View Gardens</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Tezo, Kilifi County</p>
+                        <p class="property-description">Residential/Mixed development serviced plots in Tezo, just 1km from the beach. 2.5km from Kilifi-Mombasa Highway with water & electricity on site.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-umbrella-beach"></i> Beach Access</span>
+                            <span><i class="fas fa-road"></i> Highway Proximity</span>
+                            <span><i class="fas fa-tint"></i> Water on Site</span>
+                            <span><i class="fas fa-bolt"></i> Electricity on Site</span>
+                        </div>
+                        <div class="property-pricing">
+                            <div class="pricing-option">
+                                <span class="size">1/8 Acre</span>
+                                <span class="price">KES 495K</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <a href="properties/ocean-view-gardens.html" class="btn btn-primary">View Details</a>
+                            <a href="book-visit.html" class="btn btn-secondary">Book Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 10 - Chumani Phase 3 -->
+                <div class="property-card featured-property" data-location="kilifi" data-price="550000" data-size="1/8" data-property-type="residential">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756037951/chumani-phase-3-1_xo6opr.jpg" alt="Chumani Phase 3">
+                        <div class="property-badge">Highway Proximity</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Chumani Phase 3</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Chumani, Kilifi County</p>
+                        <p class="property-description">Located just 300m from Kilifi-Malindi Highway. Ideal for residential development with water and electricity available. Ready for immediate settlement.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-road"></i> Highway Access</span>
+                            <span><i class="fas fa-home"></i> Ready for Development</span>
+                            <span><i class="fas fa-tint"></i> Water on Site</span>
+                            <span><i class="fas fa-bolt"></i> Electricity on Site</span>
+                        </div>
+                        <div class="property-pricing">
+                            <div class="pricing-option">
+                                <span class="size">1/8 Acre</span>
+                                <span class="price">KES 550K</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <a href="properties/chumani-phase-3.html" class="btn btn-primary">View Details</a>
+                            <a href="book-visit.html" class="btn btn-secondary">Book Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 11 - Kikambala Gardens Phase 2 -->
+                <div class="property-card featured-property" data-location="kikambala" data-price="1250000" data-size="1/8" data-property-type="residential">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756043746/Kikambala_Gardens_Phase_2_x7t1np.jpg" alt="Kikambala Gardens Phase 2">
+                        <div class="property-badge">Serene & Secure</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Kikambala Gardens Phase 2</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Kikambala, Kilifi County</p>
+                        <p class="property-description">Opposite Sultan Palace junction, 2.5km from the highway on main murram access road. Utilities connected, perimeter fence, 9m access roads, serene with indigenous trees.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-umbrella-beach"></i> Coastal Lifestyle</span>
+                            <span><i class="fas fa-road"></i> Highway Proximity</span>
+                            <span><i class="fas fa-tint"></i> Water Connected</span>
+                            <span><i class="fas fa-bolt"></i> Electricity Connected</span>
+                        </div>
+                        <div class="property-pricing">
+                            <div class="pricing-option">
+                                <span class="size">1/8 Acre</span>
+                                <span class="price">KES 1.25M</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <a href="properties/kikambala-gardens-phase-2.html" class="btn btn-primary">View Details</a>
+                            <a href="book-visit.html" class="btn btn-secondary">Book Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 12 - Chumani Phase 6 -->
+                <div class="property-card featured-property" data-location="chumani" data-price="595000" data-size="1/8" data-property-type="residential">
+                    <div class="property-image">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756044300/Chumani_Phase_6_azpgq5.jpg" alt="Chumani Phase 6">
+                        <div class="property-badge">Prime Location</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Chumani Phase 6</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Chumani, Kilifi County</p>
+                        <p class="property-description">Located 400m from Kilifi-Malindi Highway. Prime location with coastal ambiance, thriving community, and high investment potential.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-road"></i> Highway Proximity</span>
+                            <span><i class="fas fa-umbrella-beach"></i> Coastal Ambiance</span>
+                            <span><i class="fas fa-users"></i> Thriving Community</span>
+                            <span><i class="fas fa-chart-line"></i> Investment Potential</span>
+                        </div>
+                        <div class="property-pricing">
+                            <div class="pricing-option">
+                                <span class="size">1/8 Acre</span>
+                                <span class="price">KES 595K</span>
+                            </div>
+                            <div class="pricing-option">
+                                <span class="size">1/4 Acre</span>
+                                <span class="price">KES 1.299M</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <a href="properties/chumani-phase-6.html" class="btn btn-primary">View Details</a>
+                            <a href="book-visit.html" class="btn btn-secondary">Book Visit</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Property - Bofa Platinum Estate -->
+    <section class="featured-property-section">
+        <div class="container">
+            <div class="featured-property-header">
+                <h2>Featured Property</h2>
+                <p>Discover our premium beachfront development</p>
+            </div>
+            <div class="featured-property-content">
+                <div class="featured-property-image">
+                    <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756098961/Bofa_Platinum_Estate_wqa3bm.jpg" alt="Bofa Platinum Estate">
+                    <div class="featured-property-badge">Premium Development</div>
+                </div>
+                <div class="featured-property-details">
+                    <h3>Bofa Platinum Estate</h3>
+                    <p class="featured-property-location"><i class="fas fa-map-marker-alt"></i> Bofa, Kilifi County</p>
+                    <p class="featured-property-description">A Controlled Gated Community Development, touching Bofa Road and only 30 metres from the sandy Beach. The Project boasts premium features and exceptional beachfront living.</p>
+                    
+                    <div class="featured-property-pricing">
+                        <h4>Available Sizes & Pricing</h4>
+                        <div class="pricing-options">
+                            <div class="pricing-option">
+                                <span class="size">1/8 Acre</span>
+                                <span class="price">KES 2,990,000</span>
+                            </div>
+                            <div class="pricing-option">
+                                <span class="size">1/4 Acre</span>
+                                <span class="price">KES 5,990,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="featured-property-features">
+                        <h4>Project Features</h4>
+                        <ul class="features-list">
+                            <li><i class="fas fa-umbrella-beach"></i> <strong>Bofa Beach:</strong> Beautiful panoramic views of the Beach</li>
+                            <li><i class="fas fa-hotel"></i> <strong>Proximity:</strong> Silver Palm Beach Resort and just 4km from Kilifi Town</li>
+                            <li><i class="fas fa-tint"></i> <strong>Water:</strong> Fresh Water and Borehole water available</li>
+                            <li><i class="fas fa-shield-alt"></i> <strong>Security:</strong> Perimeter walls all around the Project</li>
+                            <li><i class="fas fa-bolt"></i> <strong>Electricity:</strong> Electricity on Site</li>
+                            <li><i class="fas fa-home"></i> <strong>Housing Design:</strong> Controlled design with 3 Bedroom Bungalows and 1 Storey Maisonettes</li>
+                        </ul>
+                    </div>
+
+                    <div class="featured-property-actions">
+                        <a href="book-visit.html" class="btn btn-primary">Book Site Visit</a>
+                        <a href="contact.html" class="btn btn-secondary">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Benefits -->
+    <section class="investment-benefits">
+        <div class="container">
+            <h2>Why Invest in Land with IAPL?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Guaranteed ROI</h3>
+                    <p>All our properties are strategically located to ensure maximum return on investment.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Genuine Titles</h3>
+                    <p>Every property comes with verified title deeds and proper documentation.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Flexible Payment</h3>
+                    <p>Interest-free payment plans tailored to your financial situation.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <h3>Value Addition</h3>
+                    <p>We provide fencing, access roads, and bush clearing for your convenience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find Your Perfect Property Investment?</h2>
+                <p>Contact our experts today for personalized guidance and exclusive residential, commercial, beach, farm, and affordable housing opportunities.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="book-visit.html" class="btn btn-secondary">Book Site Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Enquire Now Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/254711082084?text=Hi%20Inuka%20Properties!%20I%20would%20like%20to%20enquire%20about%20your%20properties." target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+            <div class="whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="whatsapp-text">
+                <span class="enquire-text">Enquire Now</span>
+            </div>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Properties Logo">
+                    </div>
+                    <p>Your Elite Partner in Real Estate</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="land-for-sale.html">For Sale</a></li>
+                        <li><a href="about/who-we-are.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Residential Properties</li>
+                        <li>Commercial Properties</li>
+                        <li>Beach Properties</li>
+                        <li>Farm Land in Chakama</li>
+                        <li>Affordable Housing Offplan</li>
+                        <li>Property Management</li>
+                        <li>Title Issuance</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> info@inukaproperties.co.ke</p>
+                    <p><i class="fas fa-phone"></i> +254 711 082 084</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nyali, Mombasa</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Inuka Afrika Properties Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function applyFilters() {
+            const propertyType = document.getElementById('propertyType').value;
+            const location = document.getElementById('location').value;
+            const price = document.getElementById('price').value;
+            const size = document.getElementById('size').value;
+            
+            const properties = document.querySelectorAll('.property-card');
+            
+            properties.forEach(property => {
+                let show = true;
+                
+                if (propertyType && property.dataset.propertyType !== propertyType) {
+                    show = false;
+                }
+                
+                if (location && property.dataset.location !== location) {
+                    show = false;
+                }
+                
+                if (price) {
+                    const propertyPrice = parseInt(property.dataset.price);
+                    if (price === '299000-1000000' && (propertyPrice < 299000 || propertyPrice > 1000000)) {
+                        show = false;
+                    } else if (price === '1000000-3000000' && (propertyPrice < 1000000 || propertyPrice > 3000000)) {
+                        show = false;
+                    } else if (price === '3000000-6000000' && (propertyPrice < 3000000 || propertyPrice > 6000000)) {
+                        show = false;
+                    } else if (price === '6000000+' && propertyPrice < 6000000) {
+                        show = false;
+                    }
+                }
+                
+                if (size && property.dataset.size !== size) {
+                    show = false;
+                }
+                
+                property.style.display = show ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

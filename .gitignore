@@ -1,0 +1,32 @@
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+*.cache
+
+# Archive files (optional - uncomment if you don't want to track zip files)
+# *.zip
+
+# Node modules (if any)
+node_modules/
+package-lock.json
+
+# Environment files
+.env
+.env.local
+
+# Build files
+dist/
+build/
+

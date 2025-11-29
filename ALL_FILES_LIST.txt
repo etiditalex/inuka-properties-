@@ -1,0 +1,143 @@
+INUKA PROPERTIES - COMPLETE FILE LISTING
+==========================================
+
+ROOT DIRECTORY FILES
+--------------------
+
+Core Files:
+- index.html
+- styles.css
+- script.js
+- robots.txt
+- sitemap.xml
+- .htaccess
+
+Main Pages:
+- land-for-sale.html
+- book-visit.html
+- contact.html
+- blogs.html
+- news.html
+- market-research.html
+- client-testimonials.html
+- downloads.html
+- privacy-policy.html
+- terms-and-conditions.html
+- google-my-business-landing.html
+
+About Pages (Root):
+- who-we-are.html
+- why-us.html
+- our-team.html
+- our-partners.html
+- csr.html
+
+Property Pages (Root):
+- bofa-phase-20.html
+- bofa-phase-21.html
+- bofa-phase-9-extension.html
+- bofa-platinum-estate.html
+- bofa-platinum-estate-handover-ceremony-september-2025.html
+- chumani-beach-view.html
+- chumani-phase-3.html
+- chumani-phase-6.html
+- kikambala-gardens-phase-2.html
+- malindi-airport-view-gardens.html
+- mida-park-view-phase-2.html
+- msabaha-phase-6.html
+- mtondia-highway-gardens.html
+- ocean-view-gardens.html
+
+Blog/News Pages (Root):
+- 2024-real-estate-market-outlook-coastal-kenya.html
+- 5-essential-questions-buying-land.html
+- flexible-payment-plans-making-real-estate-accessible.html
+- kilifi-county-next-investment-frontier.html
+- new-highway-project-boost-coastal-real-estate.html
+- nyali-mombasa-smart-investment.html
+- understanding-title-deeds-complete-guide.html
+- inuka-properties-announces-major-expansion-kilifi-county.html
+- new-office-opening-kilifi-town.html
+- new-partnership-leading-financial-institution.html
+- new-real-estate-regulations-investors-guide.html
+- q4-2023-financial-results-strong-growth.html
+- q4-2023-kenya-real-estate-market-analysis.html
+- welcome-new-sales-team-members.html
+
+Test/Preview Files:
+- mobile-preview.html
+- mobile-test.html
+
+Archive Files:
+- testimonials.zip
+
+
+ABOUT DIRECTORY
+--------------
+- about/csr.html
+- about/our-partners.html
+- about/our-team.html
+- about/who-we-are.html
+- about/why-us.html
+
+
+INSIDER DIRECTORY
+-----------------
+Main Pages:
+- insider/blogs.html
+- insider/market-research.html
+- insider/news.html
+
+Blog Posts:
+- insider/posts/blogs/2024-real-estate-market-outlook-coastal-kenya.html
+- insider/posts/blogs/5-essential-questions-buying-land.html
+- insider/posts/blogs/flexible-payment-plans-making-real-estate-accessible.html
+- insider/posts/blogs/kilifi-county-next-investment-frontier.html
+- insider/posts/blogs/new-highway-project-boost-coastal-real-estate.html
+- insider/posts/blogs/nyali-mombasa-smart-investment.html
+- insider/posts/blogs/understanding-title-deeds-complete-guide.html
+
+News Posts:
+- insider/posts/news/bofa-platinum-estate-handover-ceremony-september-2025.html
+- insider/posts/news/inuka-properties-announces-major-expansion-kilifi-county.html
+- insider/posts/news/new-office-opening-kilifi-town.html
+- insider/posts/news/new-partnership-leading-financial-institution.html
+- insider/posts/news/new-real-estate-regulations-investors-guide.html
+- insider/posts/news/q4-2023-financial-results-strong-growth.html
+- insider/posts/news/welcome-new-sales-team-members.html
+- insider/posts/news/news.zip
+
+Research:
+- insider/posts/research/q4-2023-kenya-real-estate-market-analysis.html
+
+
+PROPERTIES DIRECTORY
+--------------------
+- properties/bofa-phase-20.html
+- properties/bofa-phase-21.html
+- properties/bofa-phase-9-extension.html
+- properties/bofa-platinum-estate.html
+- properties/chumani-beach-view.html
+- properties/chumani-phase-3.html
+- properties/chumani-phase-6.html
+- properties/kikambala-gardens-phase-2.html
+- properties/malindi-airport-view-gardens.html
+- properties/mida-park-view-phase-2.html
+- properties/msabaha-phase-6.html
+- properties/mtondia-highway-gardens.html
+- properties/ocean-view-gardens.html
+
+
+TESTIMONIALS DIRECTORY
+-----------------------
+- testimonials/client-testimonials.html
+- testimonials/downloads.html
+
+
+FILE COUNT SUMMARY
+------------------
+Total HTML files: ~80+ files
+Core files: 6 files (HTML, CSS, JS, robots.txt, sitemap.xml, .htaccess)
+Archive files: 2 zip files
+Directories: 4 main directories (about, insider, properties, testimonials)
+
