@@ -544,6 +544,7 @@ body {
     background: linear-gradient(135deg, #2dabe1 0%, #1a9bd1 100%);
     color: white;
     text-align: center;
+    margin-top: 100px;
     padding: 6rem 0 4rem;
     margin-top: 120px;
 }
@@ -1934,68 +1935,168 @@ body {
 
 @media (max-width: 768px) {
     /* Header Responsive */
+    /* Hide top bar on mobile */
     .header-top {
-        padding: 0.5rem 0;
+        display: none !important;
     }
     
-    .header-top .container {
-        flex-direction: column;
-        gap: 0.75rem;
-        text-align: center;
-    }
-    
-    .header-contact {
-        gap: 1rem;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    
-    .header-contact-item {
-        font-size: 0.85rem;
-    }
-    
-    .header-social {
-        justify-content: center;
+    /* Fix header positioning - start from top when top bar is hidden */
+    .header {
+        top: 0 !important;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     
     .navbar {
         padding: 0.75rem 0;
     }
     
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
     .nav-logo img {
         height: 45px;
     }
     
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 0;
+    /* Hamburger Menu Styling */
+    .hamburger {
+        display: flex !important;
         flex-direction: column;
-        background-color: #ffffff;
-        width: 80%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding-top: 100px;
-        height: 100vh;
-        z-index: 1001;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 1002;
+        position: relative;
+        background: transparent;
+        border: none;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hamburger .bar {
+        width: 25px;
+        height: 3px;
+        background: #2dabe1;
+        margin: 3px 0;
+        transition: all 0.3s ease;
+        border-radius: 2px;
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+        background: white;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+        background: white;
+    }
+    
+    /* Mobile Navigation Menu */
+    .nav-menu {
+        position: fixed !important;
+        left: -100% !important;
+        top: 0 !important;
+        flex-direction: column !important;
+        background: linear-gradient(135deg, #2dabe1 0%, #1a9bd1 100%) !important;
+        width: 100% !important;
+        height: 100vh !important;
+        text-align: center !important;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.3) !important;
+        padding: 2rem 1rem !important;
+        padding-top: 80px !important;
+        overflow-y: auto !important;
+        z-index: 1001 !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
     }
     
     .nav-menu.active {
-        left: 0;
+        left: 0 !important;
     }
     
     .nav-item {
-        margin: 1rem 0;
+        margin: 0.5rem 0;
+        width: 100%;
     }
     
     .nav-link {
-        padding: 1rem;
-        font-size: 1rem;
+        color: white !important;
+        padding: 1rem !important;
+        font-size: 1.1rem !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        transition: all 0.3s ease;
     }
     
-    .hamburger {
-        display: flex;
+    .nav-menu .nav-link:hover,
+    .nav-menu .nav-link.active {
+        color: #ffd700 !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    /* Prevent body scroll when menu is open */
+    body.menu-open {
+        overflow: hidden;
+    }
+    
+    .nav-menu .dropdown-menu {
+        position: static !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+        box-shadow: none !important;
+        border: none !important;
+        margin-top: 0.5rem !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+    
+    .nav-menu .dropdown-menu li a {
+        color: rgba(255, 255, 255, 0.9) !important;
+        padding: 0.75rem 1rem !important;
+        font-size: 1rem !important;
+    }
+    
+    .nav-menu .dropdown-menu li a:hover {
+        background: rgba(255, 255, 255, 0.15) !important;
+        color: #ffd700 !important;
+    }
+    
+    /* Book Visit Button Mobile */
+    .book-visit-btn {
+        margin-top: 1rem !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    
+    /* Hero Section Mobile - Adjust padding since top bar is removed */
+    .hero {
+        padding-top: 80px !important;
+        height: calc(100vh - 0px) !important;
+    }
+    
+    /* Adjust other sections that might have top margin */
+    .property-search {
+        margin-top: 2rem !important;
     }
     
     .downloads-grid {
@@ -4559,8 +4660,23 @@ body {
     }
 }
 
-/* Large Mobile and Small Tablet */
+/* Large Mobile and Small Tablet - Consolidated Mobile Styles */
 @media (max-width: 768px) {
+    /* Ensure header-top is hidden */
+    .header-top {
+        display: none !important;
+    }
+    
+    /* Header starts from top */
+    .header {
+        top: 0 !important;
+    }
+    
+    /* Adjust page header margin since header is now at top */
+    .page-header {
+        margin-top: 70px !important;
+    }
+    
     .hamburger {
         display: flex !important;
     }
@@ -4568,20 +4684,20 @@ body {
     .nav-menu {
         position: fixed !important;
         left: -100% !important;
-        top: 100px !important;
+        top: 0 !important;
         flex-direction: column !important;
         background: linear-gradient(135deg, #2dabe1 0%, #1a9bd1 100%) !important;
         width: 100% !important;
-        height: calc(100vh - 100px) !important;
+        height: 100vh !important;
         text-align: center !important;
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.3) !important;
         padding: 2rem 1rem !important;
+        padding-top: 80px !important;
         overflow-y: auto !important;
-        z-index: 999 !important;
+        z-index: 1001 !important;
         justify-content: flex-start !important;
         align-items: center !important;
-        padding-top: 3rem !important;
     }
     
     .nav-menu.active {
@@ -4589,55 +4705,6 @@ body {
     }
     
     .nav-menu .nav-item {
-        margin: 0.5rem 0;
-        width: 100%;
-    }
-    
-    .nav-menu .nav-link {
-        color: white;
-        padding: 1rem;
-        width: 100%;
-        justify-content: center;
-        font-size: 1.1rem;
-    }
-    
-    .nav-menu .nav-link:hover,
-    .nav-menu .nav-link.active {
-        color: #ffd700;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
-    }
-    
-    .nav-menu .dropdown-menu {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        background: rgba(255, 255, 255, 0.1);
-        box-shadow: none;
-        border: none;
-        margin-top: 0.5rem;
-        padding: 0;
-        width: 100%;
-    }
-    
-    .nav-menu .dropdown-menu li a {
-        color: rgba(255, 255, 255, 0.9);
-        padding: 0.75rem 1rem;
-        font-size: 1rem;
-    }
-    
-    .nav-menu .dropdown-menu li a:hover {
-        background: rgba(255, 255, 255, 0.15);
-        color: #ffd700;
-    }
-    
-    /* Mobile Header Positioning */
-    .header {
-        top: 50px !important;
-    }
-    
-    .nav-item {
         margin: 0.5rem 0;
         width: 100%;
         max-width: 300px;

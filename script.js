@@ -108,12 +108,14 @@ function toggleMobileMenu() {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
     
-    // Initialize dropdowns when menu opens
+    // Prevent body scroll when menu is open
     if (navMenu.classList.contains('active')) {
+        document.body.classList.add('menu-open');
         setTimeout(() => {
             initMobileDropdowns();
         }, 100);
     } else {
+        document.body.classList.remove('menu-open');
         // Close all dropdowns when menu closes
         closeAllDropdowns();
     }
@@ -123,6 +125,7 @@ function toggleMobileMenu() {
 function closeMobileMenu() {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
+    document.body.classList.remove('menu-open');
     closeAllDropdowns();
 }
 
