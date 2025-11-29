@@ -4488,7 +4488,7 @@ body {
     }
 }
 
-/* Desktop Navigation - Ensure it's visible */
+/* Desktop Navigation - Ensure it's visible - MUST BE AFTER MOBILE STYLES */
 @media (min-width: 769px) {
     .nav-menu {
         display: flex !important;
@@ -4505,6 +4505,45 @@ body {
         overflow: visible !important;
         text-align: left !important;
         justify-content: flex-end !important;
+        transform: none !important;
+    }
+    
+    .nav-menu.active {
+        left: auto !important;
+        position: relative !important;
+    }
+    
+    .nav-menu .nav-item {
+        margin: 0 1rem !important;
+        width: auto !important;
+    }
+    
+    .nav-menu .nav-link {
+        color: #333 !important;
+        padding: 0.6rem 1.2rem !important;
+        width: auto !important;
+        justify-content: flex-start !important;
+        font-size: 0.95rem !important;
+    }
+    
+    .nav-menu .dropdown-menu {
+        position: absolute !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transform: translateY(-10px) !important;
+        background: white !important;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.15) !important;
+        border: none !important;
+        margin-top: 0 !important;
+        padding: 0.5rem 0 !important;
+        width: auto !important;
+        min-width: 200px !important;
+    }
+    
+    .nav-menu .dropdown:hover .dropdown-menu {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
     }
     
     .hamburger {
@@ -14102,6 +14141,101 @@ body {
     body {
         font-size: 12pt;
         line-height: 1.4;
+    }
+}
+
+/* ==========================================
+   DESKTOP NAVIGATION OVERRIDES - HIGHEST PRIORITY
+   ========================================== */
+@media (min-width: 769px) {
+    /* Force desktop navigation to be horizontal */
+    .nav-menu {
+        display: flex !important;
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        width: auto !important;
+        height: auto !important;
+        background: transparent !important;
+        flex-direction: row !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        z-index: auto !important;
+        overflow: visible !important;
+        text-align: left !important;
+        justify-content: flex-end !important;
+        transform: none !important;
+    }
+    
+    .nav-menu.active {
+        left: auto !important;
+        position: relative !important;
+    }
+    
+    .nav-menu .nav-item {
+        margin: 0 1rem !important;
+        width: auto !important;
+        max-width: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+    
+    .nav-menu .nav-link {
+        color: #333 !important;
+        padding: 0.6rem 1.2rem !important;
+        width: auto !important;
+        justify-content: flex-start !important;
+        font-size: 0.95rem !important;
+        font-weight: 600 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .nav-menu .nav-link:hover,
+    .nav-menu .nav-link.active {
+        color: #2dabe1 !important;
+        background: transparent !important;
+    }
+    
+    .nav-menu .dropdown-menu {
+        position: absolute !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transform: translateY(-10px) !important;
+        background: white !important;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.15) !important;
+        border: none !important;
+        margin-top: 0 !important;
+        padding: 0.5rem 0 !important;
+        width: auto !important;
+        min-width: 200px !important;
+        border-radius: 16px !important;
+    }
+    
+    .nav-menu .dropdown:hover .dropdown-menu {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+    }
+    
+    .nav-menu .dropdown-menu li a {
+        color: #333 !important;
+        padding: 0.75rem 1.5rem !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .nav-menu .dropdown-menu li a:hover {
+        background: #f8f9fa !important;
+        color: #2dabe1 !important;
+    }
+    
+    .hamburger {
+        display: none !important;
+    }
+    
+    .header-top {
+        display: block !important;
     }
 }
 
