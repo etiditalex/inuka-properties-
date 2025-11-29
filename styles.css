@@ -4187,7 +4187,7 @@ body {
     /* WhatsApp Button Mobile */
     .whatsapp-button {
         bottom: 20px;
-        right: 20px;
+        left: 20px;
     }
     
     .whatsapp-link {
@@ -11652,9 +11652,8 @@ body {
 /* WhatsApp Enquire Now Button */
 .whatsapp-button {
     position: fixed;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 20px;
+    bottom: 20px;
     z-index: 1000;
     transition: all 0.3s ease;
 }
@@ -11701,10 +11700,8 @@ body {
 /* WhatsApp Button Mobile Responsive */
 @media (max-width: 768px) {
     .whatsapp-button {
-        right: 15px;
-        top: auto;
+        left: 15px;
         bottom: 20px;
-        transform: none;
     }
     
     .whatsapp-link {
@@ -11724,7 +11721,7 @@ body {
 
 @media (max-width: 480px) {
     .whatsapp-button {
-        right: 10px;
+        left: 10px;
         bottom: 15px;
     }
     
