@@ -44,98 +44,80 @@
     </script>
 </head>
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar-content">
-                <div class="top-bar-left">
-                    <div class="contact-info">
-                        <span class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+254711082084">+254 711 082 084</a>
-                        </span>
-                        <span class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:info@inukaproperties.co.ke">info@inukaproperties.co.ke</a>
-                        </span>
-                        <span class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Nyali, Mombasa</span>
-                        </span>
-                    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <a href="tel:+254711082084" class="header-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+254 711 082 084</span>
+                    </a>
+                    <a href="mailto:info@inukaproperties.co.ke" class="header-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@inukaproperties.co.ke</span>
+                    </a>
                 </div>
-                <div class="top-bar-right">
-                    <div class="top-search">
-                        <form class="top-search-form" id="topSearchForm">
-                            <div class="search-input-group">
-                                <input type="text" id="topSearchInput" placeholder="Search properties, locations..." required>
-                                <button type="submit" class="search-btn">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="social-links-top">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                <div class="header-social">
+                    <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Header -->
-    <header class="header">
         <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Properties Logo">
-                </div>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="../../../index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="../../../land-for-sale.html" class="nav-link">For Sale</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../../about/who-we-are.html">Who We Are</a></li>
-                            <li><a href="../../../about/why-us.html">Why Us</a></li>
-                            <li><a href="../../../about/our-team.html">Our Team</a></li>
-                            <li><a href="../../../about/csr.html">CSR</a></li>
-                            <li><a href="../../../about/our-partners.html">Our Partners</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">IAPL INSIDER <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../blogs.html">Blogs</a></li>
-                            <li><a href="../news.html">News</a></li>
-                            <li><a href="../market-research.html">Market Research</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Testimonials <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../../testimonials/client-testimonials.html">Client Testimonials</a></li>
-                            <li><a href="../../../testimonials/downloads.html">Downloads</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../../../contact.html" class="nav-link">Contact Us</a>
-                    </li>
-                </ul>
-                <div class="nav-cta">
-                    <a href="../../../book-visit.html" class="book-visit-btn">Book a Site Visit</a>
-                </div>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+            <div class="container">
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <a href="../../../index.html">
+                            <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Properties Logo">
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="../../../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../../land-for-sale.html" class="nav-link">For Sale</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../../about/who-we-are.html"><i class="fas fa-info-circle"></i> Who We Are</a></li>
+                                <li><a href="../../../about/why-us.html"><i class="fas fa-star"></i> Why Us</a></li>
+                                <li><a href="../../../about/our-team.html"><i class="fas fa-users"></i> Our Team</a></li>
+                                <li><a href="../../../about/csr.html"><i class="fas fa-heart"></i> CSR</a></li>
+                                <li><a href="../../../about/our-partners.html"><i class="fas fa-handshake"></i> Our Partners</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link active">IAPL INSIDER <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../blogs.html" class="active"><i class="fas fa-blog"></i> Blogs</a></li>
+                                <li><a href="../news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                                <li><a href="../market-research.html"><i class="fas fa-chart-line"></i> Market Research</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Testimonials <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../../testimonials/client-testimonials.html"><i class="fas fa-quote-left"></i> Client Testimonials</a></li>
+                                <li><a href="../../../testimonials/downloads.html"><i class="fas fa-download"></i> Downloads</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../../contact.html" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../../book-visit.html" class="nav-link book-visit-btn">Book Visit</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -145,11 +127,11 @@
     <section class="breadcrumb">
         <div class="container">
             <nav class="breadcrumb-nav">
-                <a href="../../../index.html">Home</a>
+                <a href="../../../index.html"><i class="fas fa-home"></i> Home</a>
                 <span class="separator">/</span>
                 <a href="../blogs.html">Blogs</a>
                 <span class="separator">/</span>
-                <span class="current">Understanding Title Deeds: A Complete Guide for Investors</span>
+                <span class="current">Understanding Title Deeds</span>
             </nav>
         </div>
     </section>
@@ -159,22 +141,32 @@
         <div class="container">
             <article class="article">
                 <header class="article-header">
+                    <div class="article-category-badge">
+                        <span class="category-badge">Legal Guide</span>
+                    </div>
                     <h1>Understanding Title Deeds: A Complete Guide for Investors</h1>
                     <div class="article-meta">
-                        <span class="author">
-                            <i class="fas fa-user"></i>
-                            Inuka Properties Team
-                        </span>
-                        <span class="date">
-                            <i class="fas fa-calendar"></i>
-                            January 5, 2024
-                        </span>
-                        <span class="read-time">
-                            <i class="fas fa-clock"></i>
-                            9 min read
-                        </span>
+                        <div class="article-author-meta">
+                            <div class="author-avatar-small">
+                                <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Properties">
+                            </div>
+                            <div class="author-info-meta">
+                                <span class="author-name">Inuka Properties Team</span>
+                                <span class="article-date">January 5, 2024</span>
+                            </div>
+                        </div>
+                        <div class="article-stats">
+                            <span class="read-time">
+                                <i class="fas fa-clock"></i>
+                                9 min read
+                            </span>
+                        </div>
                     </div>
                 </header>
+
+                <div class="article-featured-image">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Understanding Title Deeds: A Complete Guide for Investors">
+                </div>
 
                 <div class="article-body">
                     <div class="article-image">
